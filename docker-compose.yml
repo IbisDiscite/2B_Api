@@ -1,0 +1,27 @@
+version: '2.1'
+services:
+  academy-api:
+    build: .
+    environment:
+      PORT: '5000'
+      SHOW_URLS: 'true'
+      AUTHENTICATION_URL: '192.168.99.101'
+      AUTHENTICATION_PORT: '4000'
+      AUTHENTICATION_ENTRY: 'authenticaion/'
+      EXAMPLES_URL: '192.168.99.101'
+      EXAMPLES_PORT: '4001'
+      EXAMPLES_ENTRY: 'examples/'
+      TODAYSLESSON_URL: '192.168.99.101'
+      TODAYSLESSON_PORT: '4002'
+      TODAYSLESSON_ENTRY: 'todayslesson/'
+      MAILER_URL: '192.168.99.101'
+      MAILER_PORT: '4003'
+      MAILER_ENTRY: 'mailes/'
+      CHAT_URL: '192.168.99.101'
+      CHAT_PORT: '4004'
+      CHAT_ENTRY: 'chat/'
+      EXERCISES_URL: '192.168.99.101'
+      EXERCISES_PORT: '4005'
+      EXERCISES_ENTRY: 'exercises/'
+    ports:
+      - '5000:5000'
