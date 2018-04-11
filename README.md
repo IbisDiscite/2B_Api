@@ -1,4 +1,4 @@
-# sa_academy_api
+# examples_api
 
 API Gateway
 
