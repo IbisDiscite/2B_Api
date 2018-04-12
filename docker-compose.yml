@@ -8,7 +8,7 @@ services:
       AUTHENTICATION_URL: '35.196.170.89'
       AUTHENTICATION_PORT: '4000'
       AUTHENTICATION_ENTRY: 'authenticaion/'
-      EXAMPLES_URL: '35.196.170.89'
+      EXAMPLES_URL: '35.190.173.97'
       EXAMPLES_PORT: '4001'
       EXAMPLES_ENTRY: 'examples/'
       UNITS_ENTRY: 'units/'
