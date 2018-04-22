@@ -1,6 +1,8 @@
 # examples_api
 
-# Verificacion de llame SSH con GitHub
+# Verificacion de llave SSH con GitHub
+
+# Subiendo de nuevo a docker hub
 
 API Gateway
 
