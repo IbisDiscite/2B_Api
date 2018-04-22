@@ -6,14 +6,10 @@ type User {
     last_login: String!
 }
 
-input UnitInput {
+input UserInput {
     email: String!
+    password_digest: String!
 }
-`;
-
-export const user_tokenQueries = `
-    allUsers: [User]!
-    userById(id: Int!): User!
 `;
 
 export const user_tokenMutations = `

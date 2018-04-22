@@ -16,15 +16,22 @@ import {
 	unitsTypeDef
 } from './units/typeDefs';
 
+import {
+	user_tokenMutations,
+	user_tokenTypeDef
+} from './user_token/typeDefs';
+
 import examplesResolvers from './examples/resolvers';
 import unitsResolvers from './units/resolvers';
+import user_tokenResolvers from './user_token/resolvers';
 
 // merge the typeDefs
 const mergedTypeDefs = mergeSchemas(
 	[
 		'scalar JSON',
 		examplesTypeDef,
-		unitsTypeDef
+		unitsTypeDef,
+		user_tokenTypeDef
 	],
 	[
 		examplesQueries,
@@ -32,7 +39,8 @@ const mergedTypeDefs = mergeSchemas(
 	],
 	[
 		examplesMutations,
-		unitsMutations
+		unitsMutations,
+		user_tokenMutations
 	]
 );
 
@@ -41,7 +49,8 @@ export default makeExecutableSchema({
 	typeDefs: mergedTypeDefs,
 	resolvers: merge(
 		{ JSON: GraphQLJSON }, // allows scalar JSON
-		examplesResolvers, 
-		unitsResolvers
+		examplesResolvers,
+		unitsResolvers,
+		user_tokenResolvers,
 	)
 });

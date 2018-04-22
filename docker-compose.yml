@@ -7,7 +7,7 @@ services:
       SHOW_URLS: 'true'
       AUTHENTICATION_URL: '35.185.3.235'
       AUTHENTICATION_PORT: '4000'
-      AUTHENTICATION_ENTRY: 'authenticaion/'
+      AUTHENTICATION_ENTRY: 'user_token/'
       EXAMPLES_URL: '35.185.3.235'
       EXAMPLES_PORT: '4001'
       EXAMPLES_ENTRY: 'examples/'
