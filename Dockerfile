@@ -1,14 +1,14 @@
 FROM node:carbon-slim
 
 # Create app directory
-WORKDIR /git/examples-api
+WORKDIR /git/api-gateway
 
 # Install app dependencies
-COPY package.json /git/examples-api
+COPY package.json /git/api-gateway
 RUN npm install
 
 # Bundle app source
-COPY . /git/examples-api
+COPY . /git/api-gateway
 RUN npm run prepublish
 
 CMD [ "npm", "run", "runServer" ]

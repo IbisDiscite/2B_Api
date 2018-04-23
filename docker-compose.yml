@@ -1,6 +1,6 @@
 version: '2'
 services:
-  examples-api:
+  api-gateway:
     image: dafrodriguezro/2b_api_gateway
     environment:
       PORT: '5000'
