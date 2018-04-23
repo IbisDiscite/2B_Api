@@ -1,14 +1,14 @@
 export const user_tokenTypeDef = `
 type User {
-    content: {
-      email: String!
-      password_digest: String!
-    }
+    id: Int!
+    email: String!
+    password_digest: String!
+    last_login: String!
 }
 
 input UserInput {
-    auth: String!
-}
+    email: String!
+    password_digest: String!
 `;
 
 export const user_tokenMutations = `
