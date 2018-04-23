@@ -1,13 +1,13 @@
 export const user_tokenTypeDef = `
 type User {
-    id: Int!
-    email: String!
-    password_digest: String!
-    last_login: String!
+    content: {
+      email: String!
+      password_digest: String!
+    }
 }
 
 input UserInput {
-  auth: String!
+    auth: String!
 }
 `;
 
