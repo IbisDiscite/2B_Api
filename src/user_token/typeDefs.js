@@ -9,6 +9,7 @@ type User {
 input UserInput {
     email: String!
     password_digest: String!
+}
 `;
 
 export const user_tokenMutations = `
