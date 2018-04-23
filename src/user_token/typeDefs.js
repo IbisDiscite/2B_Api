@@ -7,10 +7,7 @@ type User {
 }
 
 input UserInput {
-  auth:{
-    email: String!
-    password_digest: String!
-  }
+  auth: String!
 }
 `;
 
