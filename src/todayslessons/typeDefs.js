@@ -7,6 +7,6 @@ type Todayslesson {
 `;
 
 export const todayslessonsQueries = `
-    AllTodayslessons: [Todayslesson]!
-    TodayslessonById(id: Int!): Todayslesson!
+    allTodayslessons: [Todayslesson]!
+    todayslessonById(id: Int!): Todayslesson!
 `;
