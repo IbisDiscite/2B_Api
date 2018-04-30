@@ -24,7 +24,7 @@ import{
 
 import examplesResolvers from './examples/resolvers';
 import unitsResolvers from './units/resolvers';
-
+import todayslessonsResolvers from './todayslessons/resolvers';
 
 // merge the typeDefs
 const mergedTypeDefs = mergeSchemas(
