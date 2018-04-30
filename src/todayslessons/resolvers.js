@@ -5,9 +5,9 @@ const URL = `http://${url}:${port}/${entryPoint}`;
 
 const resolvers = {
 	Query: {
-		AllTodayslessons: (_) =>
+		allTodayslessons: (_) =>
 			getRequest(URL, ''),
-		TodayslessonById: (_, { id }) =>
+		todayslessonById: (_, { id }) =>
 			generalRequest(`${URL}/${id}`, 'GET'),
 	}
 };
