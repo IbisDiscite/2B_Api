@@ -65,6 +65,12 @@ export function getRequest(url, path, parameters) {
 	return generalRequest(queryUrl, 'GET');
 }
 
+//Solo para todayslessons ms
+export function getRequestTLS(url, path, parameters) {
+	const queryUrl = url;
+	return generalRequest(queryUrl, 'GET');
+}
+
 /**
  * Merge the schemas in order to avoid conflicts
  * @param {Array<string>} typeDefs
