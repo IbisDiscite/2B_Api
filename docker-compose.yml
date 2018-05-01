@@ -14,7 +14,7 @@ services:
       UNITS_ENTRY: 'units/'
       TODAYSLESSON_URL: '35.185.3.235'
       TODAYSLESSON_PORT: '4002'
-      TODAYSLESSON_ENTRY: 'todayslessons/'
+      TODAYSLESSON_ENTRY: 'todayslessons'
       MAILER_URL: '35.185.3.235'
       MAILER_PORT: '4003'
       MAILER_ENTRY: 'mailes/'
