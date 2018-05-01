@@ -19,7 +19,7 @@ import {
 import{
 	todayslessonsQueries,
 	todayslessonsTypeDef,
-} from '/todayslessons/typeDefs';
+} from './todayslessons/typeDefs';
 
 
 import examplesResolvers from './examples/resolvers';
