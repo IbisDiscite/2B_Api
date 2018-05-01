@@ -18,7 +18,7 @@ import {
 
 import{
 	todayslessonsQueries,
-	todayslessonsTypeDef,
+	todayslessonsTypeDef
 } from './todayslessons/typeDefs';
 
 
@@ -32,16 +32,16 @@ const mergedTypeDefs = mergeSchemas(
 		'scalar JSON',
 		examplesTypeDef,
 		unitsTypeDef,
-		todayslessonsTypeDef,
+		todayslessonsTypeDef
 	],
 	[
 		examplesQueries,
 		unitsQueries,
-		todayslessonsQueries,
+		todayslessonsQueries
 	],
 	[
 		examplesMutations,
-		unitsMutations,
+		unitsMutations
 	]
 );
 
@@ -52,6 +52,6 @@ export default makeExecutableSchema({
 		{ JSON: GraphQLJSON }, // allows scalar JSON
 		examplesResolvers,
 		unitsResolvers,
-		todayslessonsResolvers,
+		todayslessonsResolvers
 	)
 });
