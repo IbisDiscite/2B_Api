@@ -17,8 +17,8 @@ import {
 } from './units/typeDefs';
 
 import{
-	todayslessonsQueries;
-	todayslessonsTypeDef;
+	todayslessonsQueries,
+	todayslessonsTypeDef,
 } from '/todayslessons/typeDefs';
 
 
