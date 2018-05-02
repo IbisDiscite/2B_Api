@@ -21,10 +21,16 @@ import{
 	todayslessonsTypeDef
 } from './todayslessons/typeDefs';
 
+import {
+	usersMutations,
+	usersQueries,
+	usersTypeDef
+} from './users/typeDefs';
 
 import examplesResolvers from './examples/resolvers';
 import unitsResolvers from './units/resolvers';
 import todayslessonsResolvers from './todayslessons/resolvers';
+import usersResolvers from './users/resolvers';
 
 // merge the typeDefs
 const mergedTypeDefs = mergeSchemas(
@@ -32,7 +38,8 @@ const mergedTypeDefs = mergeSchemas(
 		'scalar JSON',
 		examplesTypeDef,
 		unitsTypeDef,
-		todayslessonsTypeDef
+		todayslessonsTypeDef,
+		usersTypeDef
 	],
 	[
 		examplesQueries,
@@ -41,7 +48,8 @@ const mergedTypeDefs = mergeSchemas(
 	],
 	[
 		examplesMutations,
-		unitsMutations
+		unitsMutations,
+		usersMutations
 	]
 );
 

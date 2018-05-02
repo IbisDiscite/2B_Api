@@ -25,11 +25,6 @@ input Headers {
 }
 `;
 
-export const sessionsQueries = `
-    userById(id: Int!): Data!
-    validateSession(headersSession: Headers!): LoginData!
-`;
-
 export const sessionsMutations = `
     deleteSession(headersSession: Headers!): Success!
 `;
