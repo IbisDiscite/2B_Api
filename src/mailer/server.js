@@ -1,3 +1,3 @@
-export const url = process.env.EXAMPLES_URL || 'mailer-ms';
-export const port = process.env.EXAMPLES_PORT || '4003';
-export const entryPoint = process.env.EXAMPLES_ENTRY || 'mailer';
+export const url = process.env.MAILER_URL || 'mailer-ms';
+export const port = process.env.MAILER_PORT || '4003';
+export const entryPoint = process.env.MAILER_ENTRY || 'mailer';
