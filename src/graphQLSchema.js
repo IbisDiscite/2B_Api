@@ -16,7 +16,7 @@ import {
 	unitsTypeDef
 } from './units/typeDefs';
 
-import{
+import {
 	todayslessonsQueries,
 	todayslessonsTypeDef
 } from './todayslessons/typeDefs';
