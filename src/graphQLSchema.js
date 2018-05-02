@@ -23,7 +23,6 @@ import{
 
 import {
 	usersMutations,
-	usersQueries,
 	usersTypeDef
 } from './users/typeDefs';
 
