@@ -17,7 +17,7 @@ services:
       TODAYSLESSON_ENTRY: 'todayslessons'
       MAILER_URL: '35.185.3.235'
       MAILER_PORT: '4003'
-      MAILER_ENTRY: 'mailes/'
+      MAILER_ENTRY: 'mailer/'
       CHAT_URL: '35.185.3.235'
       CHAT_PORT: '4004'
       CHAT_ENTRY: 'chat/'
