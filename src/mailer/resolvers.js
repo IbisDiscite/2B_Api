@@ -7,7 +7,7 @@ const resolvers = {
 	Query: {
 		allMessages: (_) =>
 			getRequest(URL, ''),
-    messageById: (_, { id }) =>
+		messageById: (_, { id }) =>
 			generalRequest(`${URL}/${id}`, 'GET'),
 	},
 	Mutation: {
