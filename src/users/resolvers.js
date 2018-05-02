@@ -9,7 +9,7 @@ const resolvers = {
 			generalRequest(`${URL}/validate_token`, 'GET', {}, true, {
 				client: headers.client,
 				uid: headers.uid,
-				access-token: headers.token
+				access_token: headers.token
 			}).then((response) => {
 				let user = response.body.data
 				user['token'] = response.headers['access-token']
