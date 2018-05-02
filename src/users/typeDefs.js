@@ -11,6 +11,25 @@ input SessionInput {
     email: String!
     password: String!
 }
+input Headers {
+    token: String!
+    client: String!
+    uid: String!
+}
+sessionData {
+    id: Int!
+    email: String!
+    name: String!
+    nickname: String!
+    image: String
+    token: String!
+    type: String!
+    client: String!
+}
+`;
+
+export const sessionQueries = `
+    validateToken(headers: Headers!): sessionData!
 `;
 
 export const sessionsMutations = `

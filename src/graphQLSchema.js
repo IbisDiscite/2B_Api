@@ -23,6 +23,7 @@ import {
 
 import {
 	sessionsMutations,
+	sessionQueries,
 	sessionsTypeDef
 } from './users/typeDefs';
 
@@ -52,6 +53,7 @@ const mergedTypeDefs = mergeSchemas(
 		examplesQueries,
 		unitsQueries,
 		todayslessonsQueries,
+		sessionQueries,
     messagesQueries
 	],
 	[
