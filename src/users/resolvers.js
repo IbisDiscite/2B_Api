@@ -12,6 +12,15 @@ const resolvers = {
 					return user
 				}
 			)
+		deleteSession: (_, { headersSession }) => {
+			return new Promise((resolve, reject) => {
+				generalRequest(`${URL}/sign_out`, 'DELETE', {}, true).then(
+					(response) => {
+						resolve(response.body)
+				}).catch((error) => {
+					reject(error)
+				})
+			})
 	}
 };
 
