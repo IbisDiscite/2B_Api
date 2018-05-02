@@ -26,10 +26,17 @@ import {
 	sessionsTypeDef
 } from './users/typeDefs';
 
+import {
+  messagesMutations,
+  messagesQueries,
+  messagesTypeDef
+} from './mailer/typeDefs';
+
 import examplesResolvers from './examples/resolvers';
 import unitsResolvers from './units/resolvers';
 import todayslessonsResolvers from './todayslessons/resolvers';
 import sessionsResolvers from './users/resolvers';
+import messagesResolvers from './mailer/resolvers';
 
 // merge the typeDefs
 const mergedTypeDefs = mergeSchemas(
@@ -38,17 +45,20 @@ const mergedTypeDefs = mergeSchemas(
 		examplesTypeDef,
 		unitsTypeDef,
 		todayslessonsTypeDef,
-		sessionsTypeDef
+		sessionsTypeDef,
+    messagesTypeDef
 	],
 	[
 		examplesQueries,
 		unitsQueries,
-		todayslessonsQueries
+		todayslessonsQueries,
+    messagesQueries
 	],
 	[
 		examplesMutations,
 		unitsMutations,
-		sessionsMutations
+		sessionsMutations,
+    messagesMutations
 	]
 );
 
@@ -60,6 +70,7 @@ export default makeExecutableSchema({
 		examplesResolvers,
 		unitsResolvers,
 		todayslessonsResolvers,
-		sessionsResolvers
+		sessionsResolvers,
+    messagesResolvers
 	)
 });
