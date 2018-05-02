@@ -38,7 +38,7 @@ const mergedTypeDefs = mergeSchemas(
 		examplesTypeDef,
 		unitsTypeDef,
 		todayslessonsTypeDef,
-		usersTypeDef
+		sessionsTypeDef
 	],
 	[
 		examplesQueries,
@@ -48,7 +48,7 @@ const mergedTypeDefs = mergeSchemas(
 	[
 		examplesMutations,
 		unitsMutations,
-		usersMutations
+		sessionsMutations
 	]
 );
 
