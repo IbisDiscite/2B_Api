@@ -22,8 +22,8 @@ import {
 } from './todayslessons/typeDefs';
 
 import {
-	usersMutations,
-	usersTypeDef
+	sessionsMutations,
+	sessionsTypeDef
 } from './users/typeDefs';
 
 import examplesResolvers from './examples/resolvers';
