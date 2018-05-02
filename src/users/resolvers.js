@@ -21,7 +21,7 @@ const resolvers = {
 				resolve(user)
 			})
 		}
-	}
+	},
 
 	Mutation: {
 		createSession: (_, { session }) =>
