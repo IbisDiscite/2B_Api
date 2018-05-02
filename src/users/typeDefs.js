@@ -16,7 +16,7 @@ input Headers {
     client: String!
     uid: String!
 }
-sessionData {
+type sessionData {
     id: Int!
     email: String!
     name: String!
