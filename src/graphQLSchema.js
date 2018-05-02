@@ -16,21 +16,20 @@ import {
 	unitsTypeDef
 } from './units/typeDefs';
 
-import{
+import {
 	todayslessonsQueries,
 	todayslessonsTypeDef
 } from './todayslessons/typeDefs';
 
 import {
-	usersMutations,
-	usersQueries,
-	usersTypeDef
+	sessionsMutations,
+	sessionsTypeDef
 } from './users/typeDefs';
 
 import examplesResolvers from './examples/resolvers';
 import unitsResolvers from './units/resolvers';
 import todayslessonsResolvers from './todayslessons/resolvers';
-import usersResolvers from './users/resolvers';
+import sessionsResolvers from './users/resolvers';
 
 // merge the typeDefs
 const mergedTypeDefs = mergeSchemas(
@@ -39,7 +38,7 @@ const mergedTypeDefs = mergeSchemas(
 		examplesTypeDef,
 		unitsTypeDef,
 		todayslessonsTypeDef,
-		usersTypeDef
+		sessionsTypeDef
 	],
 	[
 		examplesQueries,
@@ -49,7 +48,7 @@ const mergedTypeDefs = mergeSchemas(
 	[
 		examplesMutations,
 		unitsMutations,
-		usersMutations
+		sessionsMutations
 	]
 );
 
@@ -60,6 +59,7 @@ export default makeExecutableSchema({
 		{ JSON: GraphQLJSON }, // allows scalar JSON
 		examplesResolvers,
 		unitsResolvers,
-		todayslessonsResolvers
+		todayslessonsResolvers,
+		sessionsResolvers
 	)
 });
