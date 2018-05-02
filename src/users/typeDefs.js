@@ -2,6 +2,10 @@ export const sessionsTypeDef = `
 type User {
     id: Int!
     email: String!
+    provider: String!
+    name: String!
+    nickname: String!
+    image: String
 }
 input SessionInput {
     email: String!
@@ -10,5 +14,5 @@ input SessionInput {
 `;
 
 export const sessionsMutations = `
-    createSession(session: SessionInput!): User
+    createSession(session: SessionInput!): User!
 `;
