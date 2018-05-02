@@ -5,7 +5,7 @@ const URL = `http://${url}:${port}/${entryPoint}`;
 
 const resolvers = {
 	Query: {
-		allMessage: (_) =>
+		allMessages: (_) =>
 			getRequest(URL, ''),
     messageById: (_, { id }) =>
 			generalRequest(`${URL}/${id}`, 'GET'),

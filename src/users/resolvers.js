@@ -10,6 +10,7 @@ const resolvers = {
 				(response) => {
 					let user = response.body.data
 					user['token'] = response.headers['access-token']
+					user['uid'] = response.headers['uid']
 					user['type'] = response.headers['token-type']
 					user['client'] = response.headers['client']
 					return user
