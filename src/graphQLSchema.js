@@ -29,7 +29,7 @@ import {
 import examplesResolvers from './examples/resolvers';
 import unitsResolvers from './units/resolvers';
 import todayslessonsResolvers from './todayslessons/resolvers';
-import usersResolvers from './users/resolvers';
+import sessionsResolvers from './users/resolvers';
 
 // merge the typeDefs
 const mergedTypeDefs = mergeSchemas(
@@ -59,6 +59,7 @@ export default makeExecutableSchema({
 		{ JSON: GraphQLJSON }, // allows scalar JSON
 		examplesResolvers,
 		unitsResolvers,
-		todayslessonsResolvers
+		todayslessonsResolvers,
+		sessionsResolvers
 	)
 });
