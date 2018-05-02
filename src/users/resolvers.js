@@ -6,7 +6,7 @@ const URL = `http://${url}:${port}/${entryPoint}`;
 const resolvers = {
 	Mutation: {
 		createSession: (_, { session }) =>
-			generalRequest(`${URL}/sign_in`, 'POST', session).then(
+			generalRequest(`${URL}/sign_in`, 'POST', session, true).then(
 				(response) => {
 					let user = response.body.data
 					return user
