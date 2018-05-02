@@ -15,5 +15,4 @@ input SessionInput {
 
 export const sessionsMutations = `
     createSession(session: SessionInput!): User!
-    deleteSession(headersSession:Headers!) Success! 
 `;
