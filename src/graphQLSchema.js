@@ -53,7 +53,7 @@ const mergedTypeDefs = mergeSchemas(
 		unitsTypeDef,
 		todayslessonsTypeDef,
 		sessionsTypeDef,
-    messagesTypeDef,
+		messagesTypeDef,
 		authTypeDef,
 		messagesTypeDef
 	],
