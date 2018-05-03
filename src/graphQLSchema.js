@@ -33,9 +33,9 @@ import {
 } from './users/typeDefs';
 
 import {
-  messagesMutations,
-  messagesQueries,
-  messagesTypeDef
+	messagesMutations,
+	messagesQueries,
+	messagesTypeDef
 } from './mailer/typeDefs';
 
 import examplesResolvers from './examples/resolvers';
@@ -54,21 +54,26 @@ const mergedTypeDefs = mergeSchemas(
 		todayslessonsTypeDef,
 		sessionsTypeDef,
     messagesTypeDef,
-		authTypeDef
+		authTypeDef,
+		messagesTypeDef
 	],
 	[
 		examplesQueries,
 		unitsQueries,
 		todayslessonsQueries,
 		sessionQueries,
-    messagesQueries
+		messagesQueries
 	],
 	[
 		examplesMutations,
 		unitsMutations,
 		sessionsMutations,
+<<<<<<< HEAD
     messagesMutations,
 		authMutations
+=======
+		messagesMutations
+>>>>>>> ca2d7a8e930e77ba8fcfcbe9672f1e089f227ccb
 	]
 );
 
@@ -81,7 +86,11 @@ export default makeExecutableSchema({
 		unitsResolvers,
 		todayslessonsResolvers,
 		sessionsResolvers,
+<<<<<<< HEAD
     messagesResolvers,
 		authResolvers
+=======
+		messagesResolvers
+>>>>>>> ca2d7a8e930e77ba8fcfcbe9672f1e089f227ccb
 	)
 });

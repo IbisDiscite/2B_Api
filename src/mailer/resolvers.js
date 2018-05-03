@@ -7,13 +7,13 @@ const resolvers = {
 	Query: {
 		allMessages: (_) =>
 			getRequest(URL, ''),
-    messageById: (_, { id }) =>
+		messageById: (_, { id }) =>
 			generalRequest(`${URL}/${id}`, 'GET'),
 	},
 	Mutation: {
-		createMessage: (_, { example }) =>
+		createMessage: (_, { message }) =>
 			generalRequest(`${URL}`, 'POST', message),
-		updateMessage: (_, { id, example }) =>
+		updateMessage: (_, { id, message }) =>
 			generalRequest(`${URL}/${id}`, 'PUT', message),
 		deleteMessage: (_, { id }) =>
 			generalRequest(`${URL}/${id}`, 'DELETE')
