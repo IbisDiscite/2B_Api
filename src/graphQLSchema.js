@@ -54,8 +54,7 @@ const mergedTypeDefs = mergeSchemas(
 		todayslessonsTypeDef,
 		sessionsTypeDef,
 		messagesTypeDef,
-		authTypeDef,
-		messagesTypeDef
+		authTypeDef
 	],
 	[
 		examplesQueries,
@@ -68,9 +67,8 @@ const mergedTypeDefs = mergeSchemas(
 		examplesMutations,
 		unitsMutations,
 		sessionsMutations,
-    messagesMutations,
-		authMutations,
-		messagesMutations
+		messagesMutations,
+		authMutations
 	]
 );
 
@@ -83,8 +81,7 @@ export default makeExecutableSchema({
 		unitsResolvers,
 		todayslessonsResolvers,
 		sessionsResolvers,
-    messagesResolvers,
-		authResolvers,
-		messagesResolvers
+		messagesResolvers,
+		authResolvers
 	)
 });
