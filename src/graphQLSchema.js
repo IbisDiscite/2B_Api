@@ -68,12 +68,9 @@ const mergedTypeDefs = mergeSchemas(
 		examplesMutations,
 		unitsMutations,
 		sessionsMutations,
-<<<<<<< HEAD
     messagesMutations,
-		authMutations
-=======
+		authMutations,
 		messagesMutations
->>>>>>> ca2d7a8e930e77ba8fcfcbe9672f1e089f227ccb
 	]
 );
 
@@ -86,11 +83,8 @@ export default makeExecutableSchema({
 		unitsResolvers,
 		todayslessonsResolvers,
 		sessionsResolvers,
-<<<<<<< HEAD
     messagesResolvers,
-		authResolvers
-=======
+		authResolvers,
 		messagesResolvers
->>>>>>> ca2d7a8e930e77ba8fcfcbe9672f1e089f227ccb
 	)
 });
