@@ -1,7 +1,7 @@
 version: '2'
 services:
   api-gateway:
-    image: dafrodriguezro/2b_api
+    build: .
     environment:
       PORT: '5000'
       SHOW_URLS: 'true'
@@ -18,7 +18,7 @@ services:
       CHAT_ENTRY: 'chat/'
       AWARDS_PORT: '4005'
       AWARDS_ENTRY: 'awards/'
-      EXERCISES_PORT: '4040'
+      EXERCISES_PORT: '8086'
       EXERCISES_ENTRY: 'exercises/'
     ports:
       - '5000:5000'
