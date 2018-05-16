@@ -3,6 +3,7 @@ type Todayslesson {
     id: Int!
     name: String!
     description: String!
+    unit_id: Int!
 }
 `;
 
