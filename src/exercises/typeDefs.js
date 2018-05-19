@@ -5,6 +5,8 @@ type Exercise{
     enunciado: String!
     opc1: String! 
     opc2: String! 
+    opc3: String!
+    opc4: String!
     respuesta: String! 
 }`;
 export const exercisesQueries = `
