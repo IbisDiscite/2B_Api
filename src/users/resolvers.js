@@ -6,6 +6,7 @@ const URL = `http://${url}:${port}/${entryPoint}`;
 const resolvers = {
 	Query: {
 		validateToken: (_, { headers }) => {
+			return new Promise((resolve, reject) => {
 			generalRequest(`${URL}/validate_token`, 'GET', {}, true, {
 				client: headers.client,
 				uid: headers.uid,
@@ -19,6 +20,8 @@ const resolvers = {
 				delete user['uid']
 				delete user['allow_password_change']
 				resolve(user)
+			}).catch((error) => {
+					reject(error)})
 			})
 		}
 	},

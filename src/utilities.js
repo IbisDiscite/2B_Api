@@ -1,6 +1,6 @@
 import request from 'request-promise-native';
 import { formatError } from 'graphql';
-
+import { url, port, entryPoint } from './auth/server';
 /**
  * Creates a request following the given parameters
  * @param {string} url
@@ -93,4 +93,21 @@ export function formatErr(error) {
 		return { message, code, description, path };
 	}
 	return data;
+}
+
+
+export function validateToken(token, uid, client){
+	return new Promise((resolve, reject) => {
+		generalRequest(`${validationURL}`, 'GET', {}, false, {
+			client : client,
+			uid : uid,
+			access_token: token
+		}).then((response) => {
+			console.log(response);
+			resolve(true);
+		}).catch((error) => {
+			console.log(error);
+			reject(error);
+		})
+	})
 }
