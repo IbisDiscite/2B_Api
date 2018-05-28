@@ -37,7 +37,7 @@ const resolvers = {
 						resolve(user);
 					}
 				),
-			}
+			})
 		}
 	}
 };
