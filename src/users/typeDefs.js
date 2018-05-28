@@ -33,5 +33,5 @@ export const sessionQueries = `
 `;
 
 export const sessionsMutations = `
-    createSession(session: SessionInput!): User!
+    createSession(session: SessionInput!): sessionData!
 `;
