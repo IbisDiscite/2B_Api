@@ -36,10 +36,11 @@ const resolvers = {
 						user['client'] = response.headers['client']
 						resolve(user);
 					}
-				),
+				)
 			})
 		}
 	}
 };
+
 
 export default resolvers;
